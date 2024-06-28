@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#nimbusSliderWrapper {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#nimbusSlider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nimbusCard {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nimbusCard img {
+    width: 100%;
+    display: block;
+}
+
+#nimbusPrevBtn, #nimbusNextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#nimbusPrevBtn {
+    left: 10px;
+}
+
+#nimbusNextBtn {
+    right: 10px;
+}
